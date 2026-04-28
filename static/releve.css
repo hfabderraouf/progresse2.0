@@ -1,0 +1,54 @@
+.content {
+    background-color: darkgrey;
+    height: 100%;
+}
+
+.releve {
+    max-width: fit-content;
+    margin: auto;
+    background-color: white;
+    padding: 2rem;
+    min-height: 100%;
+}
+
+.releve .table-info td:nth-of-type(even) {
+    padding-inline-start: 1rem;
+    padding-inline-end: 3rem;
+}
+
+.releve .table {
+    border: 1px solid #dee2e6;
+    margin-block: 2rem;
+}
+
+.releve .table td,
+.releve .table th {
+    border: 1px solid #dee2e6;
+    white-space: nowrap;
+}
+
+.releve .table thead td,
+.releve .table thead th {
+    border-bottom-width: 2px;
+}
+
+@media print {
+    .content {
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .sidebar,
+    .navbar {
+        display: none;
+    }
+
+    .releve {
+        position: absolute;
+        size: A4;
+        max-width: unset;
+        width: 100%;
+        padding: 1cm;
+        min-height: unset;
+    }
+}

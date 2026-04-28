@@ -1,0 +1,184 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    "Noto Sans",
+    "Liberation Sans",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  border: 0;
+  border-top: 1px solid;
+  opacity: .25;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529
+}
+
+.table td,
+.table th {
+  padding: .75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6
+}
+
+.table tbody+tbody {
+  border-top: 2px solid #dee2e6
+}
+
+label {
+  display: inline-block;
+  margin-bottom: .5rem;
+}
+
+select {
+  word-wrap: normal;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.text-input {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+}
+
+.text-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.text-input[readonly] {
+  background-color: #e9ecef;
+  opacity: 1;
+}
+
+.text-input.is-invalid {
+  border-color: #dc3545;
+  padding-right: calc(1.5em + .75rem) !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23dc3545' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right calc(.375em + .1875rem) center;
+  background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+}
+
+.invalid-input {
+  display: none;
+  width: 100%;
+  margin-top: .25rem;
+  font-size: .875em;
+  color: #dc3545;
+}
+
+.is-invalid~.invalid-input{
+  display: block;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.btn:not(:disabled) {
+  cursor: pointer;
+}
+.error-message {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin: 8px 0;
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+  text-align: center;
+  margin: 8px 0;
+}
+
+.circle-vert {
+  height: 1rem;
+  width: 1rem;
+  background-color: forestgreen;
+  border-radius: 50%;
+  cursor: help;
+}
+
+.circle-gris {
+  height: 1rem;
+  width: 1rem;
+  background-color: gray;
+  border-radius: 50%;
+  cursor: help;
+}
